@@ -34,3 +34,62 @@
   angle: -0 deg;
   border: 0.9px solid #c8c8c8;
 }
+.prizetag {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #007f61;
+}
+.pair {
+  font-family: Metropolis;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.tags {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+.offer {
+  width: 55px;
+  height: 15px;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Metropolis;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.underline {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 55px;
+  height: 12px;
+  margin-top: 0px;
+  left: 131.89697265625px;
+  opacity: 0.30000001192092896px;
+}
+#btnControl:checked + div > h5 {
+  align-items: end;
+  justify-items: end;
+}

@@ -27,13 +27,23 @@ export default function Pair({ cardData }) {
               <input
                 type="radio"
                 name="radio"
+                id="btnControl"
                 onChange={(e) => handlechange(e, val.productid, val.prize)}
               />
             </div>
 
             <div>
-              <p> {val.products} Pair</p>
-              <h5> DKK {val.prize}</h5>
+              <p className="pair"> {val.products} Pair</p>
+              <section style={{ display: "flex", gap: "10px" }}>
+                <h5 className="tags"> DKK {val.prize}</h5>
+                {val.popular ? (
+                  <p className="underline">
+                    <del>192.78</del>
+                  </p>
+                ) : (
+                  ""
+                )}
+              </section>
               {toggle.checked && toggle.id == val.productid ? (
                 <div>
                   <table>
@@ -87,9 +97,9 @@ export default function Pair({ cardData }) {
               )}
             </div>
 
-            <div>
-              {val.popular ? <h5>Most Popular</h5> : ""}
-              <h5>{val.offer} off</h5>
+            <div for="btnControl">
+              {val.popular ? <h5 className="prizetag">Most Popular</h5> : ""}
+              <h5 className="offer">{val.offer} off</h5>
             </div>
           </section>
         );
