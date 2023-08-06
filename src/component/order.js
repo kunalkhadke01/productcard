@@ -1,4 +1,4 @@
-export default function Order() {
+export default function Order({ value }) {
   const mybutton = {
     width: "341px",
     height: "48px",
@@ -10,7 +10,7 @@ export default function Order() {
     <main>
       <div style={{ display: "flex", gap: 60, justifyContent: "center" }}>
         <h4>Free 2 Day Shipping</h4>
-        <h4>Total : DKK 360.00</h4>
+        <h4>Total : DKK {value}</h4>
       </div>
       <div style={mybutton}>
         <button style={mybutton}>+ Add to Cart</button>

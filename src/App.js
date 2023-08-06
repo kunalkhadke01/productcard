@@ -1,6 +1,6 @@
 import "./styles.css";
 import Pair from "./component/paircard";
-import Order from "./component/order";
+
 export default function App() {
   const arrayofobject = [
     {
@@ -29,9 +29,6 @@ export default function App() {
   return (
     <div className="App">
       <Pair cardData={arrayofobject} />
-      {/* <SelectProduct />
-      <BestOffer /> */}
-      <Order />
     </div>
   );
 }

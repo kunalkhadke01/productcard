@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
 import "../assest/pairCard.css";
-
+import Order from "./order";
 export default function Pair({ cardData }) {
   const [toggle, settoggle] = useState({});
-  const handlechange = (e, id) => {
-    settoggle({ checked: e.target.checked, id: id });
+  const handlechange = (e, id, prize) => {
+    settoggle({ checked: e.target.checked, id: id, prize: prize });
   };
   return (
     <main>
@@ -27,7 +27,7 @@ export default function Pair({ cardData }) {
               <input
                 type="radio"
                 name="radio"
-                onChange={(e) => handlechange(e, val.productid)}
+                onChange={(e) => handlechange(e, val.productid, val.prize)}
               />
             </div>
 
@@ -94,6 +94,7 @@ export default function Pair({ cardData }) {
           </section>
         );
       })}
+      <Order value={toggle.prize} />
     </main>
   );
 }
