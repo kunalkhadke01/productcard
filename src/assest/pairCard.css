@@ -1,0 +1,36 @@
+.card1 {
+  width: 340.734px;
+  height: auto;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  border-radius: 3.615px;
+  border: 0.904px solid #c8c8c8;
+  background: #fff;
+  margin: auto auto 20px auto;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.heading .headline {
+  font-family: Metropolis;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #007f61;
+  margin: 10px;
+}
+.line {
+  width: 93.99552917480504px;
+  top: -308.9620361328125px;
+  left: 206.73806762695312px;
+  border: 0.9038031101226807px;
+  angle: -0 deg;
+  border: 0.9px solid #c8c8c8;
+}
